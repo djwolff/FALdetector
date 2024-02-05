@@ -51,6 +51,11 @@ if __name__ == '__main__':
             mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
     ])
 
+    # TODO: video processing
+    # for each frame, perform local detector. 
+    # Compile heatmap frames and save it into a video
+    # Compile warped frames and save it into a video
+
     im_w, im_h = Image.open(img_path).size
     if args.no_crop:
         face = Image.open(img_path).convert('RGB')
